@@ -75,6 +75,7 @@ header{
     display: flex;
     flex-direction: column;
     color: $black-light;
+    min-width: 62.5%;
     // TODO
     hr{
         width: 150px;
@@ -104,7 +105,7 @@ header{
         
 
         margin: auto;
-        margin-bottom: 100px;
+        margin-bottom: 220px;
         min-width: 805px;
         .feature-card{
             width: 255px;
@@ -128,5 +129,67 @@ header{
                 margin-top: 50px;
             }
         }
+    }
+
+    
+}
+
+
+.abouts{
+    padding: 0 10%;
+    
+    // BG Pattern ... DON'T TOUCH IT !!!
+    .about-bg{
+        position: absolute;
+        z-index: -1;
+        max-width: 616px;
+        max-height: 706px;
+    }
+    .right{
+        right: 0;
+    }
+
+    .left{
+        left: 0;
+    }
+
+
+
+    .about{
+
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+
+        .about-img{
+            max-width: 50%;
+        }
+
+        .text{
+            max-width: 410px;
+            font-family: 'Poppins';
+            font-size: 1.5rem;
+            font-weight: 400;
+            p{
+                word-spacing: .2rem;
+            }
+            .main-about-text{
+                font-weight: 700;
+                color: $blue-dark;
+            }
+            h4{
+                opacity: 75%;
+            }
+        }
+
+    }
+
+    .about-1{
+        margin-bottom: 200px;
+    }
+
+    .about-2{
+        margin-bottom: 130px;
+        flex-direction: row-reverse;
     }
 }
