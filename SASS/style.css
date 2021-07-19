@@ -94,7 +94,6 @@ header .main .main-img {
 }
 
 header .main .partners {
-  width: 664px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,6 +111,40 @@ header .main .partners {
 
 header .main .partner-img {
   min-width: 150px;
+  margin: 0px 40px;
+}
+
+@media screen and (max-width: 1281px) {
+  .bg {
+    width: 100%;
+    height: 80%;
+  }
+  header .nav .tabs {
+    display: none;
+  }
+  header .main {
+    margin-top: 30px;
+  }
+  header .main .main-img {
+    max-width: 80vw;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  header .main .partners {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .main .partners .partner-img {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bg {
+    width: 100%;
+    height: 60%;
+  }
 }
 
 .features {
@@ -190,6 +223,12 @@ header .main .partner-img {
   margin-top: 50px;
 }
 
+@media screen and (max-width: 1281px) {
+  .features .features-cards {
+    margin-bottom: 100px;
+  }
+}
+
 .abouts {
   padding: 0 10%;
   margin-bottom: 250px;
@@ -220,6 +259,13 @@ header .main .partner-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  justify-content: space-between;
 }
 
 .abouts .about .about-img {
@@ -256,6 +302,25 @@ header .main .partner-img {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 1281px) {
+  .abouts .about {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .abouts .about .text {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .abouts .about .text h4 {
+    margin-top: 20px;
+  }
 }
 
 .fun-fact {
@@ -313,6 +378,32 @@ header .main .partner-img {
 .fun-fact span {
   font-weight: 300;
   color: #232323;
+}
+
+@media screen and (max-width: 1000px) {
+  .fun-fact {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .fun-fact .fun-fact-img {
+    position: static;
+    margin: 0;
+    margin-bottom: 40px;
+    max-width: 80vw;
+  }
+  .fun-fact .text {
+    width: 50%;
+  }
+  .fun-fact .text hr {
+    margin: auto;
+    margin-bottom: 25px;
+  }
 }
 
 .team {
