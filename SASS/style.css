@@ -344,14 +344,17 @@ header .main .partner-img {
 }
 
 @media screen and (max-width: 460px) {
-  .about-bg {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 706px;
+  .abouts .about-bg {
+    display: none;
   }
-  .about {
+  .abouts .about {
     width: 80%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    margin-bottom: 80px;
+    padding: 0;
   }
 }
 
