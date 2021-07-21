@@ -95,7 +95,7 @@ header {
 
     .bg {
         width: 100%;
-        height: 80%;
+        height: 60%;
     }
 
     header{
@@ -122,7 +122,9 @@ header {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
+
+
     .bg {
         width: 100%;
         height: 60%;
@@ -193,6 +195,13 @@ header {
         }
     }
    
+}
+
+@media screen and (max-width: 460px) {
+    .feature-card{
+        width: 80%;
+    }
+
 }
 
 .abouts {
@@ -397,6 +406,15 @@ header {
     }
 
    
+}
+
+@media screen and (max-width: 600px){
+    .team{
+        img{
+            width: 80%;
+        }
+    
+    }
 }
 
 .reviews{
