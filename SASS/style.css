@@ -147,6 +147,13 @@ header .main .partner-img {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .bg {
+    width: 100%;
+    height: 80%;
+  }
+}
+
 .features {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -326,6 +333,18 @@ header .main .partner-img {
   }
   .abouts .about .text h4 {
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .about-bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 706px;
+  }
+  .about {
+    width: 80%;
   }
 }
 
